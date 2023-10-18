@@ -10,11 +10,11 @@ import "./App.scss";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <div>
           <Header />
           <Routes>
-            <Route path={import.meta.env.BASE_URL} element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
           </Routes>
           <Footer />
