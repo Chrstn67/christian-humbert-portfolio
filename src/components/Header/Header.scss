@@ -1,0 +1,22 @@
+.Header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #cecece;
+  border-radius: 1.5em;
+  padding: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.8em;
+  perspective: 1000px;
+
+  img {
+    border-radius: 100%;
+    width: 20%;
+  }
+
+  p {
+    font-size: 2em;
+    text-align: center;
+  }
+}
