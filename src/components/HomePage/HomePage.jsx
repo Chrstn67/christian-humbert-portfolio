@@ -19,7 +19,7 @@ const calculateAge = (birthdate) => {
 
 const personalInfo = {
   name: "Christian HUMBERT",
-  age: calculateAge("1998-05-23"),
+  age: calculateAge("1998-03-11"),
   linkedin: "https://www.linkedin.com/in/christian-humbert-developpeur-web/",
   cv: "./assets/CV-Christian_HUMBERT.pdf",
   email: "chrstn.hmbrt67@outlook.com",
@@ -40,14 +40,14 @@ const personalInfo = {
 const professionalExperience = [
   {
     title: "Développeur Web",
-    position: "Poste: Développeur Web",
-    duration: "Durée: DISPONIBLE",
-    skills: ["HTML", "CSS", "JS", "PHP", "SQL", "React", "Sass"],
+    position: "Développeur Web",
+    duration: "DISPONIBLE",
+    skills: ["HTML", "CSS", "JS", "PHP", "SQL", "React", "Sass", "ViteJS"],
   },
   {
     title: "Académie de Strasbourg",
-    position: "Poste: AESH",
-    duration: "Durée: 2017 - 2022",
+    position: "AESH",
+    duration: "2017 - 2022",
     skills: [
       "Enseignement (Tous niveaux + ULIS Collège)",
       "Vulgarisation (mathématiques)",
@@ -71,8 +71,8 @@ const education = [
   {
     institution: "Lycée Louis Marchal, Molsheim",
     title: "Baccalauréat STI2D",
-    status: "Admis, Mention BIEN",
     period: "2014-2016",
+    achievements: "Admis, Mention BIEN",
     skills: [
       "Conception de Cahiers des Charges",
       "Réalisation de projets techniques",
@@ -215,7 +215,7 @@ const HomePage = () => {
                 <h3>{experience.title}</h3>
                 <p>{experience.position}</p>
                 <p>{experience.duration}</p>
-                <h4>Compétences dans le développement</h4>
+                <h4>Compétences en tant que {experience.position}</h4>
                 <ul>
                   {experience.skills.map((skill, skillIndex) => (
                     <li key={skillIndex}>{skill}</li>
