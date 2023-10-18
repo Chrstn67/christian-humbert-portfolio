@@ -14,7 +14,7 @@ function App() {
         <div>
           <Header />
           <Routes>
-            <Route path="/christian-humbert-portfolio" element={<HomePage />} />
+            <Route path={import.meta.env.BASE_URL} element={<HomePage />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
           </Routes>
           <Footer />
