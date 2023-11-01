@@ -12,7 +12,7 @@ const Footer = () => {
           &copy; {currentYear} Tous droits réservés.{" "}
           <Link to="/mentions-legales">Mentions légales</Link>
         </p>
-        <img src="./assets/Logo.png" alt="Logo développeur" />
+        <img src="./assets/Logo.jpg" alt="Logo développeur" />
       </div>
     </footer>
   );
