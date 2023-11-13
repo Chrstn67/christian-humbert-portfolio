@@ -1,22 +1,25 @@
 .Header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #cecece;
-  border-radius: 1.5em;
-  padding: 1em;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 0.8em;
-  perspective: 1000px;
+  text-align: center;
+  position: relative;
 
-  img {
-    border-radius: 100%;
-    width: 20%;
+  .banner {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100vh;
   }
 
-  p {
-    font-size: 2em;
-    text-align: center;
+  .photo-profil {
+    display: none;
+    width: 7em;
+    height: 8em;
+    border-radius: 50%;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+
+    @media (min-width: 630px) {
+      display: block;
+    }
   }
 }

@@ -42,7 +42,7 @@ const professionalExperience = [
     title: "Développeur Web",
     position: "Développeur Web",
     duration: "DISPONIBLE",
-    skills: ["HTML", "CSS", "JS", "PHP", "SQL", "React", "Sass", "ViteJS"],
+    skills: ["HTML", "CSS/SCSS", "JS", "React", "ViteJS", "Symfony"],
   },
   {
     title: "Académie de Strasbourg",
@@ -108,10 +108,13 @@ const otherExperience = [
 
 const interests = [
   "Musique",
-  "Mathématiques",
-  "Sciences naturelles (paléontologie, entomologie)",
   "Randonnées",
+  "Sciences",
+  "Paléontologie",
+  "Entomologie",
+  "Mathématiques",
   "Lecture",
+  "Football télévisé",
 ];
 
 const projects = [

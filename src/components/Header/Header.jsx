@@ -3,12 +3,13 @@ import "./Header.scss";
 function Header() {
   return (
     <header className="Header">
-      <h1>Christian HUMBERT</h1>
+      <img className="banner" src="./assets/banner.png" alt="Bannière" />
+
       <img
+        className="photo-profil"
         src="./assets/images/Photo-profil.png"
         alt="Photo de profil, Christian HUMBERT"
       />
-      <p>Développeur web</p>
     </header>
   );
 }
