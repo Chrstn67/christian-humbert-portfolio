@@ -126,7 +126,7 @@ const projects = [
   },
   {
     title: "PaleoData",
-    imageUrl: "assets/images/paysage_prehistoire.jpeg",
+    imageUrl: "assets/images/PaleoData.png",
     description:
       "Amateurs de paléontologie, ce site est pour vous ! Venez faire un safari préhistorique, un voyage dans le temps. Partez à la découverte d'animaux dont vous ne soupçonniez peut-être pas l'existence ! N'hésitez pas à venir collaborer !",
     technologies: ["ViteJS", "SASS"],
