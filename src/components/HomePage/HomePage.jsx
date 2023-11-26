@@ -1,4 +1,5 @@
 import React from "react";
+import Sondage from "../Sondage/Sondage";
 import "./HomePage.scss";
 
 const calculateAge = (birthdate) => {
@@ -311,12 +312,20 @@ const HomePage = () => {
               </span>{" "}
               <br />
               {project.siteLink && (
-                <a href={project.siteLink} target="_blank">
+                <a
+                  href={project.siteLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Visiter le site
                 </a>
               )}
               {project.videoLink && (
-                <a href={project.videoLink} target="_blank">
+                <a
+                  href={project.videoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Voir la présentation du projet en vidéo
                 </a>
               )}
@@ -324,6 +333,7 @@ const HomePage = () => {
           ))}
         </div>
       </section>
+      <Sondage />
     </div>
   );
 };
