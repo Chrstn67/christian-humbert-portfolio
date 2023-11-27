@@ -80,23 +80,23 @@ const Sondage = () => {
       </p>
       {sondagesAvecResultats.map((sondage, index) => (
         <div key={index} className="Question">
-          <h3>{sondage.question}</h3>
-          <ul>
-            {sondage.propositions.map((proposition, propositionIndex) => (
-              <li key={propositionIndex} className="Option">
-                <span className="OptionLabel">{proposition.option}</span>
-                <div className="ProgressBar">
-                  <div
-                    className={`Fill ${
-                      parseInt(proposition.resultat) === 100 ? "filled" : ""
-                    }`}
-                    style={{ width: `${proposition.resultat}%` }}
-                  ></div>
-                </div>
-                <span className="Resultat">{proposition.resultat}%</span>
-              </li>
-            ))}
-          </ul>
+          <details>
+            <summary>{sondage.question}</summary>
+            <ul>
+              {sondage.propositions.map((proposition, propositionIndex) => (
+                <li key={propositionIndex} className="Option">
+                  <span className="OptionLabel">{proposition.option}</span>
+                  <div className="ProgressBar">
+                    <div
+                      className="Fill"
+                      style={{ width: `${proposition.resultat}%` }}
+                    ></div>
+                  </div>
+                  <span className="Resultat">{proposition.resultat}%</span>
+                </li>
+              ))}
+            </ul>
+          </details>
         </div>
       ))}
     </div>

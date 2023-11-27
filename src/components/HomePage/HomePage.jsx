@@ -157,7 +157,7 @@ const projects = [
     title: "Traducteur Français-Alsacien",
     imageUrl: "assets/images/alsace.jpeg",
     description:
-      "Il s'agit là d'un de mes tous premiers projets alliant les nouvelles connaissances acquises en début de formation DWWM. Vous allez avoir devant les yeux un CSS complètement repensé. Ce traducteur est loin d'être terminé, mais il avancera et sera de plus en plus complet. Amis Alsaciens, Bienvenus !!",
+      "Il s'agit là d'un de mes tous premiers projets alliant les nouvelles connaissances acquises en début de formation DWWM. Amis Alsaciens, Bienvenus !!",
     technologies: ["HTML", "CSS", "JS"],
     siteLink: "https://chrstn67.github.io/Traducteur-Francais-Alsacien/",
   },
@@ -165,7 +165,7 @@ const projects = [
     title: "VoiceRanger",
     imageUrl: "assets/images/voice.jpeg",
     description:
-      "Petit projet sympa qui aurait pu se faire en Back, mais que j'ai volontairement fait en Front... Voici des cartes d'indentité de chanteuses et chanteurs du monde entier. L'objectif principal est de renseigner la tessiture vocale et l'ambitus de chaque artiste. Il en manque évidemment plein et des mises à jours seront régulières.",
+      "Petit projet sympa qui aurait pu se faire en Back, mais que j'ai volontairement fait en Front... Voici des cartes d'indentité de chanteuses et chanteurs du monde entier. L'objectif principal est de renseigner la tessiture vocale et l'ambitus de chaque artiste.",
     technologies: ["HTML", "CSS", "JS"],
     siteLink: "https://chrstn67.github.io/Voice_Ranger/",
   },
@@ -219,7 +219,7 @@ const HomePage = () => {
                 <h3>{experience.title}</h3>
                 <p>{experience.position}</p>
                 <p>{experience.duration}</p>
-                <h4>Compétences en tant que {experience.position}</h4>
+                <h4>Compétences :</h4>
                 <ul>
                   {experience.skills.map((skill, skillIndex) => (
                     <li key={skillIndex}>{skill}</li>
