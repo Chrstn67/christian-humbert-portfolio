@@ -26,8 +26,8 @@ const personalInfo = {
   email: "chrstn.hmbrt67@outlook.com",
   languageSkills: [
     "Français : Langue maternelle",
-    "LSF : Notions",
-    "LPC : Niveau Avancé",
+    "Langue des Signes Française : Notions",
+    "Langage Parlé-Complété : Niveau Avancé",
   ],
   otherSkills: [
     "Lecture Labio-faciale: Maitrisée",
@@ -47,7 +47,7 @@ const professionalExperience = [
   },
   {
     title: "Académie de Strasbourg",
-    position: "AESH",
+    position: "Accompagnant d'Élèves en Situation de Handicap",
     duration: "2017 - 2022",
     skills: [
       "Enseignement (Tous niveaux + ULIS Collège)",
@@ -60,7 +60,7 @@ const professionalExperience = [
 const education = [
   {
     institution: "O'Clock",
-    title: "Titre professionnel: DWWM",
+    title: "Titre Professionnel: Développeur Web & Web Mobile",
     period: "Nov 2022 - Mai 2023",
     achievements: "TP CCP Frontend validé - Août 2023",
     skills: [

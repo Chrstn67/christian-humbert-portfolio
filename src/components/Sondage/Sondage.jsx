@@ -1,7 +1,9 @@
-// Sondage.js
-import React from "react";
+import React, { useState } from "react";
 import "./Sondage.scss";
 const Sondage = () => {
+  const [fillAnimation, setFillAnimation] = useState(false);
+  const [resultatAnimation, setResultatAnimation] = useState(false);
+
   const sondagesAvecResultats = [
     {
       question:
@@ -64,6 +66,14 @@ const Sondage = () => {
     //   },
   ];
 
+  const handleSummaryClick = () => {
+    setFillAnimation(true);
+
+    setTimeout(() => {
+      setResultatAnimation(true);
+    }, 1000);
+  };
+
   return (
     <div className="Sondage">
       <h2>Résultats de sondages</h2>
@@ -81,20 +91,28 @@ const Sondage = () => {
       {sondagesAvecResultats.map((sondage, index) => (
         <div key={index} className="Question">
           <details>
-            <summary>{sondage.question}</summary>
+            <summary onClick={handleSummaryClick}>{sondage.question}</summary>
             <ul>
-              {sondage.propositions.map((proposition, propositionIndex) => (
-                <li key={propositionIndex} className="Option">
-                  <span className="OptionLabel">{proposition.option}</span>
-                  <div className="ProgressBar">
-                    <div
-                      className="Fill"
-                      style={{ width: `${proposition.resultat}%` }}
-                    ></div>
-                  </div>
-                  <span className="Resultat">{proposition.resultat}%</span>
-                </li>
-              ))}
+              {sondage.propositions
+                .sort((a, b) => parseInt(b.resultat) - parseInt(a.resultat))
+                .map((proposition, propositionIndex) => (
+                  <li key={propositionIndex} className="Option">
+                    <span className="OptionLabel">{proposition.option}</span>
+                    <div className="ProgressBar">
+                      <div
+                        className={`Fill${fillAnimation ? " filled" : ""}`}
+                        style={{
+                          width: `${
+                            resultatAnimation ? proposition.resultat : 0
+                          }%`,
+                        }}
+                      ></div>
+                    </div>
+                    <span className="Resultat">
+                      {resultatAnimation ? proposition.resultat : 0}%
+                    </span>
+                  </li>
+                ))}
             </ul>
           </details>
         </div>
