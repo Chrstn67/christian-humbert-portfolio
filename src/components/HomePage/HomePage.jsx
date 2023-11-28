@@ -62,7 +62,7 @@ const education = [
     institution: "O'Clock",
     title: "Titre Professionnel: Développeur Web & Web Mobile",
     period: "Nov 2022 - Mai 2023",
-    achievements: "TP CCP Frontend validé - Août 2023",
+    achievements: "	Admis TP – Développeur web et web mobile - Novembre 2023",
     skills: [
       "Formation intensive en développement web",
       "Projets pratiques sur la base des langages HTML, CSS, JS, PHP, SQL",
