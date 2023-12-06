@@ -1,5 +1,6 @@
 import React from "react";
 import Sondage from "../Sondage/Sondage";
+import Articles from "../Articles/Articles";
 import "./HomePage.scss";
 
 const calculateAge = (birthdate) => {
@@ -334,6 +335,7 @@ const HomePage = () => {
         </div>
       </section>
       <Sondage />
+      <Articles />
     </div>
   );
 };
