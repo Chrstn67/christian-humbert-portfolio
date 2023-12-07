@@ -2,7 +2,6 @@ import React from "react";
 import "./Articles.scss";
 
 const Articles = () => {
-  // Créez un tableau de tutoriels avec des liens LinkedIn
   const tutorials = [
     {
       title: "Utilisation de Leaflet avec React",
