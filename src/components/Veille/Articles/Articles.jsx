@@ -30,7 +30,7 @@ const Articles = () => {
                 alt={`Image de ${tutorial.title}`}
                 className="description"
               />
-              <p>Voir le tutoriel</p>
+              <p>Voir le tutoriel sur LinkedIn</p>
             </div>
           </a>
         ))}
