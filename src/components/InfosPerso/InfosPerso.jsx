@@ -40,7 +40,7 @@ const InfosPerso = () => {
       <div className="card-1">
         <img
           className="photo-profil"
-          src="./assets/images/photo-profil.png"
+          src="/assets/images/photo-profil.png"
           alt="Photo de profil, Christian HUMBERT"
         />
 
