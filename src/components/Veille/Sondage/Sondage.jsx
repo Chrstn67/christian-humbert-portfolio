@@ -55,24 +55,17 @@ const Sondage = () => {
       ],
     },
 
-    //   {
-    //     question: "Un dev backend doit-il travailler du pur front durant ses missions ?",
-    //     propositions: [
-    //       { option: "Quasi tous les jours !", resultat: "0" },
-    //       { option: "Régulièrement", resultat: "0" },
-    //       { option: "Très rarement", resultat: "0" },
-    //       { option: "Jamais", resultat: "0" },
-    //     ],
-    //   },
+    {
+      question:
+        "Un dev backend doit-il travailler du pur front durant ses missions ?",
+      propositions: [
+        { option: "Quasi tous les jours !", resultat: "8" },
+        { option: "Régulièrement", resultat: "48" },
+        { option: "Très rarement", resultat: "44" },
+        { option: "Jamais", resultat: "0" },
+      ],
+    },
   ];
-
-  const handleSummaryClick = () => {
-    setFillAnimation(true);
-
-    setTimeout(() => {
-      setResultatAnimation(true);
-    }, 1000);
-  };
 
   return (
     <div className="Sondage">
@@ -91,7 +84,7 @@ const Sondage = () => {
       {sondagesAvecResultats.map((sondage, index) => (
         <div key={index} className="Question">
           <details>
-            <summary onClick={handleSummaryClick}>{sondage.question}</summary>
+            <summary>{sondage.question}</summary>
             <ul>
               {sondage.propositions
                 .sort((a, b) => parseInt(b.resultat) - parseInt(a.resultat))
@@ -100,17 +93,11 @@ const Sondage = () => {
                     <span className="OptionLabel">{proposition.option}</span>
                     <div className="ProgressBar">
                       <div
-                        className={`Fill${fillAnimation ? " filled" : ""}`}
-                        style={{
-                          width: `${
-                            resultatAnimation ? proposition.resultat : 0
-                          }%`,
-                        }}
+                        className="Fill"
+                        style={{ width: `${proposition.resultat}%` }}
                       ></div>
                     </div>
-                    <span className="Resultat">
-                      {resultatAnimation ? proposition.resultat : 0}%
-                    </span>
+                    <span className="Resultat">{`${proposition.resultat}%`}</span>
                   </li>
                 ))}
             </ul>

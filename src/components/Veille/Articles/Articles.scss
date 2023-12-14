@@ -1,0 +1,81 @@
+.Articles {
+  color: #fff;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 0.3em;
+  backdrop-filter: blur(10px);
+  transform: translateZ(0);
+  background: #040a22;
+  box-shadow: inset 2.01px -2.01px 20px rgba(214, 214, 214, 0.168627451),
+    inset -3.01333px 3.01333px 3.01333px rgba(255, 255, 255, 0.3882352941);
+  backdrop-filter: blur(70px);
+
+  h2 {
+    text-align: center;
+  }
+
+  .tutorial-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .tutorial-item {
+      position: relative;
+      border-left: 2px solid #3498db;
+      border-bottom: 2px solid #3498db;
+      border-radius: 0.3em;
+      backdrop-filter: blur(10px);
+      transform: translateZ(0);
+      background: rgba(9, 167, 240, 0.3882352941);
+      box-shadow: inset 2.01px -2.01px 20px rgba(214, 214, 214, 0.168627451),
+        inset -3.01333px 3.01333px 3.01333px rgba(255, 255, 255, 0.3882352941);
+      backdrop-filter: blur(70px);
+      padding: 1rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      &:hover {
+        background-color: #ecf0f1;
+        color: #040a22;
+      }
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-size: 1.5rem;
+        color: #0084ff;
+        margin-bottom: 0.5em;
+      }
+
+      img {
+        width: 10em;
+        height: 10em;
+        object-fit: cover;
+        border-radius: 0.5em;
+        z-index: 1;
+        margin: 1em 0em 1em 0em;
+
+        @media (min-width: 400px) {
+          width: 100%;
+          height: auto;
+        }
+
+        @media (min-width: 500px) {
+          width: 11.5em;
+          height: 11.5em;
+        }
+      }
+
+      p {
+        margin-top: 0.5em;
+        font-size: 1rem;
+        color: #7f8c8d;
+      }
+    }
+  }
+}

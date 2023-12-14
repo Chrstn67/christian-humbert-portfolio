@@ -1,0 +1,128 @@
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 0.3em;
+  backdrop-filter: blur(10px);
+  transform: translateZ(0);
+  background: #040a22;
+  box-shadow: inset 2.01px -2.01px 20px rgba(214, 214, 214, 0.168627451),
+    inset -3.01333px 3.01333px 3.01333px rgba(255, 255, 255, 0.3882352941);
+  backdrop-filter: blur(70px);
+
+  h2 {
+    text-align: center;
+  }
+
+  .project-item {
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    border-left: 2px solid #3498db;
+    border-bottom: 2px solid #3498db;
+    border-radius: 0.3em;
+    backdrop-filter: blur(10px);
+    transform: translateZ(0);
+    background: rgba(9, 167, 240, 0.3882352941);
+    box-shadow: inset 2.01px -2.01px 20px rgba(214, 214, 214, 0.168627451),
+      inset -3.01333px 3.01333px 3.01333px rgba(255, 255, 255, 0.3882352941);
+    backdrop-filter: blur(70px);
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    transition: background-color 0.3s ease;
+
+    .left-content {
+      width: 40%;
+      text-align: left;
+    }
+
+    .right-content {
+      width: 55%;
+      text-align: left;
+      padding-left: 1rem;
+
+      h3 {
+        font-size: 1.5rem;
+        color: #0084ff;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #d4e3e4;
+        margin-bottom: 1rem;
+      }
+
+      a {
+        color: #ff9900;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {
+          background-color: #ff9900;
+          color: #040a22;
+          padding: 0.5em;
+          border-radius: 0.5em;
+        }
+      }
+
+      h4 {
+        text-transform: uppercase;
+        color: #7f8c8d;
+        margin-top: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          font-size: 1rem;
+          color: #00fff2;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    .image-container {
+      text-align: center;
+      img {
+        width: 8em;
+        height: 8em;
+        object-fit: cover;
+        border-radius: 0.5em;
+        z-index: 1;
+        margin: 1em 0em 1em 0em;
+
+        @media (min-width: 400px) {
+          width: 100%;
+          height: auto;
+        }
+
+        @media (min-width: 500px) {
+          width: 11.5em;
+          height: 11.5em;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    .project-item {
+      flex-direction: column;
+
+      .left-content,
+      .right-content {
+        width: 100%;
+      }
+
+      .right-content {
+        padding-left: 0;
+      }
+    }
+  }
+}

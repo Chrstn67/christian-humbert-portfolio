@@ -8,18 +8,4 @@
     max-width: 100%;
     max-height: 100vh;
   }
-
-  .photo-profil {
-    display: none;
-    width: 7em;
-    height: 8em;
-    border-radius: 50%;
-    position: absolute;
-    top: 1em;
-    left: 1em;
-
-    @media (min-width: 630px) {
-      display: block;
-    }
-  }
 }
