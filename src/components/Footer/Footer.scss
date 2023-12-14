@@ -1,7 +1,9 @@
 // Footer.scss
 
 .footer {
-  background-color: #222;
+  background-color: #040a22;
+  box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
+    0 0 20px #0000ff80;
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -14,16 +16,21 @@
     flex-wrap: wrap;
 
     a {
-      color: #ffffff;
-      text-decoration: underline;
-
+      color: #ff9900;
+      cursor: pointer;
+      text-decoration: none;
       &:hover {
-        color: #3498db;
+        background-color: #ff9900;
+        color: #040a22;
+        padding: 0.5em;
+        border-radius: 0.5em;
       }
     }
     img {
       width: 12em;
       height: 12em;
+      box-shadow: inset 5px -5px 50px #006eff, inset -4px 4px 4px #ffffff,
+        0 0 20px #0000ff80;
     }
   }
 }

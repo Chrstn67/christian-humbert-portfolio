@@ -14,6 +14,8 @@
     border-radius: 0.5em;
     z-index: 1;
     margin: 1em 0em 1em 0em;
+    box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
+      0 0 20px #0000ff80;
 
     @media (min-width: 500px) {
       width: 15em;
@@ -29,9 +31,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #040a22;
-    filter: blur(5px);
-    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    background: linear-gradient(100deg, #040a22 30%, #1261c9 70%);
+    filter: blur(30px);
+    border-radius: 30% 70% 80% 30%/30% 30% 70% 70%;
     z-index: 0;
   }
 
@@ -52,9 +54,9 @@
       border-radius: 0.3em;
       backdrop-filter: blur(10px);
       transform: translateZ(0);
-      background: #09a7f063;
-      box-shadow: inset 2.01px -2.01px 20px #d6d6d62b,
-        inset -3.01333px 3.01333px 3.01333px #ffffff63;
+      background: linear-gradient(100deg, #1261c9 30%, #040a22 70%);
+      box-shadow: inset 4px -4px 20px #1c43dd,
+        inset -4px 3.01333px 3.01333px #d6defc;
       backdrop-filter: blur(70px);
       &:nth-last-child(-n + 3):hover {
         background: #3da559;
@@ -112,8 +114,8 @@
   backdrop-filter: blur(10px);
   transform: translateZ(0);
   background: #040a22;
-  box-shadow: inset 2.01px -2.01px 20px rgba(214, 214, 214, 0.168627451),
-    inset -3.01333px 3.01333px 3.01333px rgba(255, 255, 255, 0.3882352941);
+  box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
+    0 0 20px #0000ff80;
   backdrop-filter: blur(70px);
 }
 
@@ -126,8 +128,8 @@
   backdrop-filter: blur(10px);
   transform: translateZ(0);
   background: #09a7f063;
-  box-shadow: inset 2.01px -2.01px 20px rgba(214, 214, 214, 0.168627451),
-    inset -3.01333px 3.01333px 3.01333px rgba(255, 255, 255, 0.3882352941);
+  box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
+    0 0 20px #0000ff80;
   backdrop-filter: blur(70px);
 
   h3 {
@@ -173,8 +175,8 @@
   backdrop-filter: blur(10px);
   transform: translateZ(0);
   background: rgba(9, 167, 240, 0.3882352941);
-  box-shadow: inset 2.01px -2.01px 20px rgba(214, 214, 214, 0.168627451),
-    inset -3.01333px 3.01333px 3.01333px rgba(255, 255, 255, 0.3882352941);
+  box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
+    0 0 20px #0000ff80;
   backdrop-filter: blur(70px);
 
   h3 {
@@ -220,8 +222,8 @@
   backdrop-filter: blur(10px);
   transform: translateZ(0);
   background: rgba(9, 167, 240, 0.3882352941);
-  box-shadow: inset 2.01px -2.01px 20px rgba(214, 214, 214, 0.168627451),
-    inset -3.01333px 3.01333px 3.01333px rgba(255, 255, 255, 0.3882352941);
+  box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
+    0 0 20px #0000ff80;
   backdrop-filter: blur(70px);
 
   h3 {

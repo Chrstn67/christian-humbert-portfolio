@@ -62,6 +62,7 @@ const InfosPerso = () => {
               src="./assets/images/Logos/linkedin-logo.png"
               alt="Logo LinkedIn"
             />
+
             <a
               href={personalInfo.linkedin}
               target="_blank"
