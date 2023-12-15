@@ -59,19 +59,7 @@
         inset -4px 3.01333px 3.01333px #d6defc;
       backdrop-filter: blur(70px);
       &:nth-last-child(-n + 3):hover {
-        background: #3da559;
-        background: -webkit-linear-gradient(
-          155deg,
-          #3da559 0%,
-          #3510c7 50%,
-          #d52859 100%
-        );
-        background: linear-gradient(
-          155deg,
-          #3da559 0%,
-          #3510c7 50%,
-          #d52859 100%
-        );
+        background: linear-gradient(100deg, #040a22 30%, #1261c9 70%);
       }
       .logo-network {
         width: 1.5em;

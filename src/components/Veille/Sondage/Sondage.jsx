@@ -65,13 +65,24 @@ const Sondage = () => {
         { option: "Jamais", resultat: "0" },
       ],
     },
+    // {
+    //   question:
+    //     "Quelle est la meilleure manière de se former au développement web ?",
+    //   propositions: [
+    //     { option: "Bootcamp 3-6 mois", resultat: "" },
+    //     { option: "Bac +3, 4, ou 5", resultat: "" },
+    //     { option: "Solo et à son rythme", resultat: "" },
+    //     { option: "Autre", resultat: "0" },
+    //   ],
+    // },
   ];
 
   return (
     <div className="Sondage">
       <h2>Résultats de sondages</h2>
       <p>
-        Retrouvez ces sondages sur mon profil{" "}
+        Retrouvez ces sondages sur mon profil <br />
+        <br />
         <a
           className="link-sondages"
           href="https://www.linkedin.com/in/christian-humbert-developpeur-web/recent-activity/all/"

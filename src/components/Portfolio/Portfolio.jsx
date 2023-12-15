@@ -15,7 +15,7 @@ const projects = [
     title: "PaleoData",
     imageUrl: "assets/images/PaleoData.png",
     description:
-      "Amateurs de paléontologie, ce site est pour vous ! Venez faire un safari préhistorique, un voyage dans le temps. Partez à la découverte d'animaux dont vous ne soupçonniez peut-être pas l'existence ! N'hésitez pas à venir collaborer !",
+      "Amateurs de paléontologie ou d'animaux disparus, ce site est pour vous ! Venez faire un safari préhistorique, un voyage dans le temps. Partez à la découverte d'animaux dont vous ne soupçonniez peut-être pas l'existence ! Venez collaborer !",
     technologies: ["ViteJS", "SASS"],
     siteLink: "https://chrstn67.github.io/PaleoData/#/",
   },
@@ -48,7 +48,7 @@ const projects = [
     title: "VoiceRanger",
     imageUrl: "assets/images/voice.jpeg",
     description:
-      "Petit projet sympa qui aurait pu se faire en Back, mais que j'ai volontairement fait en Front... Voici des cartes d'indentité de chanteuses et chanteurs du monde entier. L'objectif principal est de renseigner la tessiture vocale et l'ambitus de chaque artiste.",
+      "Voici des cartes d'indentité de chanteuses et chanteurs du monde entier. L'objectif principal est de renseigner la tessiture vocale et l'ambitus de chaque artiste. C'est l'un de mes premiers projets alliant les connaissances acquises durant ma formation DWWM",
     technologies: ["HTML", "CSS", "JS"],
     siteLink: "https://chrstn67.github.io/Voice_Ranger/",
   },
