@@ -1,11 +1,10 @@
 .Sondage {
-  // width: 50%;
   text-align: center;
   color: #fff;
   padding: 0.5em;
   margin: 0.5em;
   border-radius: 0.3em;
-  backdrop-filter: blur(10px);
+
   transform: translateZ(0);
   background: #040a22;
   box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
@@ -59,6 +58,16 @@
         list-style: none;
         padding: 0;
         margin: 0;
+        color: #fff;
+        padding: 0.5em;
+        margin: 0.5em;
+        border-radius: 0.3em;
+
+        transform: translateZ(0);
+        background: rgba(9, 167, 240, 0.3882352941);
+        box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
+          0 0 20px rgba(0, 0, 255, 0.5019607843);
+        backdrop-filter: blur(70px);
 
         .Option {
           display: flex;
@@ -68,6 +77,7 @@
           .OptionLabel {
             flex: 1;
             color: #0084ff;
+            text-align: left;
           }
 
           .ProgressBar {
