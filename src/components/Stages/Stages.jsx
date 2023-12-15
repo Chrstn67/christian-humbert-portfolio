@@ -12,7 +12,7 @@ const otherExperience = [
       "Réparation du matériel informatique",
       "Sécurité service réseau",
       "Initiation aux lois RGPD",
-      "Découverte des infrastructures, visite d'un data-center",
+      "Visite d'un data-center",
       "Mise en place de la fibre optique",
       "Configuration Réseaux",
       "Visite d'un studio de tournage",

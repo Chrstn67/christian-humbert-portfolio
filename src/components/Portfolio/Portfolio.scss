@@ -106,15 +106,15 @@
         box-shadow: inset 10px -10px 30px #001f47, inset -8px 8px 8px #ffffff,
           0 0 20px #0000ff80;
 
-        @media (min-width: 500px) {
-          width: 11.5em;
-          height: 11.5em;
+        @media (min-width: 670px) {
+          width: 11em;
+          height: 11em;
         }
       }
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     .project-item {
       flex-direction: column;
 
