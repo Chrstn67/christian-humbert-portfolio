@@ -16,14 +16,20 @@
     flex-wrap: wrap;
 
     a {
-      color: #ff9900;
+      color: #d4e3e4;
+      background: linear-gradient(100deg, #040a22 30%, #1261c9 70%);
+      box-shadow: inset 4px -4px 20px #1c43dd,
+        inset -4px 3.01333px 3.01333px #d6defc;
       cursor: pointer;
+      padding: 0.5em;
+
+      border-radius: 0.5em;
       text-decoration: none;
       &:hover {
-        background-color: #ff9900;
-        color: #040a22;
-        padding: 0.5em;
-        border-radius: 0.5em;
+        background: linear-gradient(100deg, #1261c9 30%, #040a22 70%);
+        box-shadow: inset 4px -4px 20px #1c43dd,
+          inset -4px 3.01333px 3.01333px #d6defc;
+        backdrop-filter: blur(70px);
       }
     }
     img {

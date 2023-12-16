@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import "./Footer.scss";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear(); // Obtient l'année actuelle dynamiquement
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="footer">
       <div className="footer-content">
         <p>
-          &copy; {currentYear} Tous droits réservés.{" "}
+          &copy; {currentYear} Tous droits réservés. <br />
+          <br />
           <Link to="/mentions-legales">Mentions légales</Link>
         </p>
         <img src="./assets/Logo.jpg" alt="Logo développeur" />

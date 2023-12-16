@@ -12,7 +12,7 @@ const Articles = () => {
 
   return (
     <section className="Articles">
-      <h2>Tutoriels</h2>
+      <h2>Articles</h2>
 
       <div className="tutorial-list">
         {tutorials.map((tutorial, index) => (
@@ -30,7 +30,7 @@ const Articles = () => {
                 alt={`Image de ${tutorial.title}`}
                 className="description"
               />
-              <p>Voir le tutoriel sur LinkedIn</p>
+              <p>Voir l'article sur LinkedIn</p>
             </div>
           </a>
         ))}
