@@ -65,16 +65,16 @@ const Sondage = () => {
         { option: "Jamais", resultat: "0" },
       ],
     },
-    // {
-    //   question:
-    //     "Quelle est la meilleure manière de se former au développement web ?",
-    //   propositions: [
-    //     { option: "Bootcamp 3-6 mois", resultat: "" },
-    //     { option: "Bac +3, 4, ou 5", resultat: "" },
-    //     { option: "Solo et à son rythme", resultat: "" },
-    //     { option: "Autre", resultat: "0" },
-    //   ],
-    // },
+    {
+      question:
+        "Quelle est la meilleure manière de se former au développement web ?",
+      propositions: [
+        { option: "Bootcamp 3-6 mois", resultat: "25" },
+        { option: "Bac +3, 4, ou 5", resultat: "49" },
+        { option: "Solo et à son rythme", resultat: "19" },
+        { option: "Autre", resultat: "7" },
+      ],
+    },
   ];
 
   return (
