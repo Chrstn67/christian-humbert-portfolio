@@ -45,6 +45,7 @@ const Defis = () => {
                   Voir le défi
                 </a>
               </p>
+              <p>Voir les épisodes</p>
             </summary>
 
             <div className="season-list">

@@ -64,9 +64,9 @@
         border-radius: 0.3em;
 
         transform: translateZ(0);
-        background: rgba(9, 167, 240, 0.3882352941);
+        background: #09a7f063;
         box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
-          0 0 20px rgba(0, 0, 255, 0.5019607843);
+          0 0 20px #0000ff80;
         backdrop-filter: blur(70px);
 
         .Option {
@@ -83,7 +83,7 @@
           .ProgressBar {
             flex: 2;
             height: 20px;
-            background-color: rgba(9, 167, 240, 0.3882352941);
+            background-color: #09a7f063;
             border: 1px solid #3498db;
             border-radius: 0.3em;
             overflow: hidden;

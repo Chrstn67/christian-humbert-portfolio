@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Footer from "../Footer/Footer";
-import MentionsLegales from "../Footer/MentionsLegales/MentionsLegales";
 import Header from "../Header/Header";
 import HomePage from "../HomePage/HomePage";
+import ScrollToTopButton from "../ScrollToTopButton/ScrollToTopButton";
+import MentionsLegales from "../Footer/MentionsLegales/MentionsLegales";
+import Footer from "../Footer/Footer";
 
 import "./App.scss";
 
@@ -20,6 +21,7 @@ function App() {
           <Footer />
         </div>
       </BrowserRouter>
+      <ScrollToTopButton />
     </div>
   );
 }
