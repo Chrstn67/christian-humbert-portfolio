@@ -1,14 +1,16 @@
 import React from "react";
 
 import Sondage from "./Sondage/Sondage";
-import Articles from "./Articles/Articles";
+import Tutoriels from "./Tutoriels/Tutoriels";
+import Defis from "./Defis/Defis";
 
 const Veille = () => {
   return (
     <>
       <Sondage />
 
-      <Articles />
+      <Tutoriels />
+      <Defis />
     </>
   );
 };

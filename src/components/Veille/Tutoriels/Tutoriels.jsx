@@ -1,7 +1,7 @@
 import React from "react";
-import "./Articles.scss";
+import "./Tutoriels.scss";
 
-const Articles = () => {
+const Tutoriels = () => {
   const tutorials = [
     {
       title: "Utilisation de Leaflet avec React",
@@ -11,8 +11,8 @@ const Articles = () => {
   ];
 
   return (
-    <section className="Articles">
-      <h2>Articles</h2>
+    <section className="Tutoriels">
+      <h2>Tutoriels</h2>
 
       <div className="tutorial-list">
         {tutorials.map((tutorial, index) => (
@@ -39,4 +39,4 @@ const Articles = () => {
   );
 };
 
-export default Articles;
+export default Tutoriels;

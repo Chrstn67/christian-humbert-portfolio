@@ -75,13 +75,23 @@ const Sondage = () => {
         { option: "Autre", resultat: "7" },
       ],
     },
+
+    // {
+    //   question:
+    //     "PHP est-il VRAIMENT en voie de disparition ?",
+    //   propositions: [
+    //     { option: "OUI, complètement !", resultat: "25" },
+    //     { option: "NON, trop utile !", resultat: "49" },
+    //     { option: "Mitigé...", resultat: "19" },
+    //   ],
+    // },
   ];
 
   return (
     <div className="Sondage">
       <h2>Résultats de sondages</h2>
       <p>
-        Retrouvez ces sondages sur mon profil <br />
+        Retrouvez tous mes sondages sur mon profil <br />
         <br />
         <a
           className="link-sondages"
