@@ -6,8 +6,6 @@ import Stages from "../Stages/Stages";
 import Hobbies from "../Hobbies/Hobbies";
 import Portfolio from "../Portfolio/Portfolio";
 import Veille from "../Veille/Veille";
-// import Articles from "../Articles/Articles";
-// import "./HomePage.scss";
 
 const HomePage = () => {
   return (
@@ -16,11 +14,8 @@ const HomePage = () => {
       <Hobbies />
       <Experience />
       <Formation />
-
       <Stages />
-
       <Portfolio />
-
       <Veille />
     </>
   );
