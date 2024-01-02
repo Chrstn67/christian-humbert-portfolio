@@ -21,6 +21,8 @@ const personalInfo = {
   name: "Christian HUMBERT",
   age: calculateAge("1998-03-11"),
   linkedin: "https://www.linkedin.com/in/christian-humbert-developpeur-web/",
+  biodev:
+    "https://www.linkedin.com/pulse/lhistoire-de-mon-premier-projet-web-et-mes-d%2525C3%2525A9buts-dans-humbert-yqxwe%3FtrackingId=AEJW5zIYSSie0BWbTIsBUA%253D%253D/?trackingId=AEJW5zIYSSie0BWbTIsBUA%3D%3D",
   cv: "./assets/CV-Christian_HUMBERT.pdf",
   email: "chrstn.hmbrt67@outlook.com",
   languageSkills: [
@@ -79,6 +81,15 @@ const InfosPerso = () => {
             />
             <a href={personalInfo.cv} target="_blank" rel="noopener noreferrer">
               CV
+            </a>
+          </p>
+          <p>
+            <a
+              href={personalInfo.biodev}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Comment j'ai commencé le dev
             </a>
           </p>
         </div>
