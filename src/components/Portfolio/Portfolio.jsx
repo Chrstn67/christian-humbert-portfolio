@@ -11,6 +11,7 @@ const projects = [
     videoLink:
       "https://www.linkedin.com/posts/christian-humbert-developpeur-web_et-voil%C3%A0-la-pr%C3%A9sentation-de-notre-projet-activity-7060258632805834752-DYZI?utm_source=share&utm_medium=member_desktop",
   },
+
   {
     title: "PaleoData",
     imageUrl: "assets/images/PaleoData.png",
@@ -18,6 +19,14 @@ const projects = [
       "Amateurs de paléontologie ou d'animaux disparus, ce site est pour vous ! Venez faire un safari préhistorique, un voyage dans le temps. Partez à la découverte d'animaux dont vous ne soupçonniez peut-être pas l'existence ! Venez collaborer !",
     technologies: ["ViteJS", "SASS"],
     siteLink: "https://chrstn67.github.io/PaleoData/#/",
+  },
+  {
+    title: "Questions pour un Champion",
+    imageUrl: "assets/images/qpuc.png",
+    description:
+      "Des parties du célèbre jeu 'Questions pour un Champion' ? Amusez-vous avec ces quelques variantes en famille ou entre amis !",
+    technologies: ["ViteJS", "SASS"],
+    siteLink: "https://chrstn67.github.io/questions-pour-un-champion-jeu/",
   },
   // {
   //   title: "Def'Web",
