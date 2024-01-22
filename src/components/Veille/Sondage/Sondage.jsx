@@ -76,15 +76,14 @@ const Sondage = () => {
       ],
     },
 
-    // {
-    //   question:
-    //     "PHP est-il VRAIMENT en voie de disparition ?",
-    //   propositions: [
-    //     { option: "OUI, complètement !", resultat: "25" },
-    //     { option: "NON, trop utile !", resultat: "49" },
-    //     { option: "Mitigé...", resultat: "19" },
-    //   ],
-    // },
+    {
+      question: "PHP est-il VRAIMENT en voie de disparition ?",
+      propositions: [
+        { option: "OUI, complètement !", resultat: "14" },
+        { option: "NON, trop utile !", resultat: "61" },
+        { option: "Mitigé...", resultat: "25" },
+      ],
+    },
   ];
 
   return (
