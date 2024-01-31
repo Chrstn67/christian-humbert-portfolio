@@ -84,6 +84,15 @@ const Sondage = () => {
         { option: "Mitigé...", resultat: "25" },
       ],
     },
+    {
+      question: "Pour travailler du back PHP, quel framework préférez-vous ?",
+      propositions: [
+        { option: "PHP natif", resultat: "6" },
+        { option: "Laravel", resultat: "17" },
+        { option: "Symfony", resultat: "75" },
+        { option: "Autre", resultat: "2" },
+      ],
+    },
   ];
 
   return (
