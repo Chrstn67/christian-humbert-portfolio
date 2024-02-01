@@ -8,6 +8,11 @@ const Tutoriels = () => {
       link: "https://www.linkedin.com/pulse/tutoriel-sur-lutilisation-de-leaflet-avec-react-christian-humbert-qoyhe%3FtrackingId=NV75NlP5RlOPb%252FKi05wRIg%253D%253D/?trackingId=NV75NlP5RlOPb%2FKi05wRIg%3D%3D",
       image: "assets/images/Articles/Leaflet.png",
     },
+    {
+      title: "React : Comment réaliser un menu-burger fonctionnel",
+      link: "https://www.linkedin.com/pulse/react-comment-r%2525C3%2525A9aliser-un-menu-burger-fonctionnel-christian-humbert-zoalc%3FtrackingId=TR6VoJP4RnqwV2vfDWRtSA%253D%253D/?trackingId=TR6VoJP4RnqwV2vfDWRtSA%3D%3D",
+      image: "assets/images/Articles/MenuBurger.png",
+    },
   ];
 
   return (
