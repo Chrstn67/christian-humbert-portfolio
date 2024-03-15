@@ -19,6 +19,7 @@ const projects = [
       "Amateurs de paléontologie ou d'animaux disparus, ce site est pour vous ! Venez faire un safari préhistorique, un voyage dans le temps. Partez à la découverte d'animaux dont vous ne soupçonniez peut-être pas l'existence ! Venez collaborer !",
     technologies: ["ViteJS", "SASS"],
     siteLink: "https://chrstn67.github.io/PaleoData/#/",
+    status: "REFONTE EN COURS",
   },
   {
     title: "Questions pour un Champion",
@@ -44,6 +45,7 @@ const projects = [
       "Cela vous dit de laisser l'indémodable papier-stylo de côté ?  Dans ce projet, je vous propose de vous aider dans votre recherche d'emploi. L'utilisation est extrêmement simple: Il vous suffit simplement de renseigner à qui et quand vous avez envoyé votre lettre de candidature ! Vous pourrez ensuite spécifier si vous avez reçu une réponse ou non. Bonne recherche à vous !",
     technologies: ["React", "SCSS", "GeoAPI"],
     siteLink: "https://chrstn67.github.io/Mail-Search-Job-Manager/",
+    status: "REFONTE EN COURS",
   },
   {
     title: "Traducteur Français-Alsacien",
@@ -105,7 +107,7 @@ const Portfolio = () => {
                 </a>
               </p>
             )}
-            {/* {project.status && <p>{project.status}</p>} */}
+            {project.status && <p className="status">{project.status}</p>}
           </div>
         </div>
       ))}

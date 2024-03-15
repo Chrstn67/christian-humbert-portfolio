@@ -33,6 +33,17 @@
     margin-bottom: 1rem;
     transition: background-color 0.3s ease;
 
+    .status {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      background-color: #ff9100a2;
+      padding: 0.5em;
+      color: white;
+      border-radius: 0.3em;
+      transform: rotate(-20deg);
+    }
+
     .left-content {
       width: 40%;
       text-align: center;
