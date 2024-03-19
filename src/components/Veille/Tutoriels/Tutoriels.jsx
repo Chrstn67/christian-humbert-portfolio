@@ -13,6 +13,12 @@ const Tutoriels = () => {
       link: "https://www.linkedin.com/pulse/react-comment-r%2525C3%2525A9aliser-un-menu-burger-fonctionnel-christian-humbert-zoalc%3FtrackingId=TR6VoJP4RnqwV2vfDWRtSA%253D%253D/?trackingId=TR6VoJP4RnqwV2vfDWRtSA%3D%3D",
       image: "assets/images/Articles/MenuBurger.png",
     },
+
+    {
+      title: "React : Comment créer un scroll-to-top-button fonctionnel",
+      link: "https://www.linkedin.com/pulse/react-comment-cr%C3%A9er-un-scroll-to-top-button-christian-humbert-l5zte/",
+      image: "assets/images/Articles/scroll-to-top-button.png",
+    },
   ];
 
   return (
