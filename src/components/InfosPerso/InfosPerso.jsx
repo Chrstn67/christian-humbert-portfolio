@@ -32,6 +32,7 @@ const personalInfo = {
     { language: "Lecture Labio-faciale", level: "Maitrisée" },
     { language: "Anglais", level: "A1-A2" },
     { language: "Espagnol", level: "B2-C1" },
+    { language: "Russe", level: "A1" },
   ],
   otherSkills: ["Permis B", "RQTH illimitée"],
 };
