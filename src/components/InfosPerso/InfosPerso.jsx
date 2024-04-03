@@ -1,5 +1,13 @@
 import React from "react";
 import "./InfosPerso.scss";
+import {
+  FaEnvelope,
+  FaLinkedin,
+  FaDiscord,
+  FaWhatsapp,
+  FaSlack,
+  FaInfo,
+} from "react-icons/fa";
 
 const calculateAge = (birthdate) => {
   const today = new Date();
@@ -21,6 +29,10 @@ const personalInfo = {
   name: "Christian HUMBERT",
   age: calculateAge("1998-03-11"),
   linkedin: "https://www.linkedin.com/in/christian-humbert-developpeur-web/",
+  discord: "discord.gg/CEn3pBs6mR",
+  slack:
+    "https://join.slack.com/t/mycliumgroupe/shared_invite/zt-26dxwb0qa-gfLxOej6e0~4X6PJOUshkA",
+  whatsapp: "https://whatsapp.com/channel/0029VaZwOjRIXnlifbrBE83N",
   biodev:
     "https://www.linkedin.com/pulse/lhistoire-de-mon-premier-projet-web-et-mes-d%2525C3%2525A9buts-dans-humbert-yqxwe%3FtrackingId=AEJW5zIYSSie0BWbTIsBUA%253D%253D/?trackingId=AEJW5zIYSSie0BWbTIsBUA%3D%3D",
   cv: "./assets/CV-Christian_HUMBERT.pdf",
@@ -50,22 +62,14 @@ const InfosPerso = () => {
         <div className="card-1-content">
           <p>{`${personalInfo.age} ans`}</p>
           <p>
-            <img
-              className="logo-network"
-              src="./assets/images/Logos/mail-logo.png"
-              alt="Logo Mail"
-            />
+            <FaEnvelope className="logo-network" />
             <a
               href={`mailto:${personalInfo.email}`}
+              title="Lien Mail"
             >{`${personalInfo.email}`}</a>
           </p>
           <p>
-            <img
-              className="logo-network"
-              src="./assets/images/Logos/linkedin-logo.png"
-              alt="Logo LinkedIn"
-            />
-
+            <FaLinkedin className="logo-network" />
             <a
               href={personalInfo.linkedin}
               target="_blank"
@@ -75,12 +79,46 @@ const InfosPerso = () => {
             </a>
           </p>
           <p>
-            <img
-              className="logo-network"
-              src="./assets/images/Logos/cv-logo.png"
-              alt="Logo CV"
-            />
-            <a href={personalInfo.cv} target="_blank" rel="noopener noreferrer">
+            <FaDiscord className="logo-network" />
+            <a
+              href={personalInfo.discord}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Lien Discord"
+            >
+              Discord
+            </a>
+          </p>
+          <p>
+            <FaSlack className="logo-network" />
+            <a
+              href={personalInfo.slack}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Lien Slack"
+            >
+              Slack
+            </a>
+          </p>
+          <p>
+            <FaWhatsapp className="logo-network" />
+            <a
+              href={personalInfo.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Lien Chaîne WhatsApp"
+            >
+              Chaîne WhatsApp
+            </a>
+          </p>
+          <p>
+            <FaInfo className="logo-network" />
+            <a
+              href={personalInfo.cv}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Lien CV PDF"
+            >
               CV
             </a>
           </p>
@@ -89,6 +127,7 @@ const InfosPerso = () => {
               href={personalInfo.biodev}
               target="_blank"
               rel="noopener noreferrer"
+              title="Lien Article LinkedIn"
             >
               Comment j'ai commencé le dev
             </a>

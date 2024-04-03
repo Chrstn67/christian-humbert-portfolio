@@ -20,12 +20,6 @@
     @media (min-width: 500px) {
       width: 10em;
       height: 10em;
-      margin-top: 3em;
-    }
-    @media (min-width: 600px) {
-      width: 15em;
-      height: 15em;
-      margin-top: 3em;
     }
   }
 
@@ -44,11 +38,11 @@
 
   .card-1-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     position: relative;
     z-index: 2;
     padding: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
 
     p {
       display: flex;
@@ -63,7 +57,7 @@
       box-shadow: inset 4px -4px 20px #1c43dd,
         inset -4px 3.01333px 3.01333px #d6defc;
       backdrop-filter: blur(70px);
-      &:nth-last-child(-n + 4):hover {
+      &:nth-last-child(-n + 7):hover {
         background: linear-gradient(100deg, #040a22 30%, #1261c9 70%);
       }
       .logo-network {
@@ -80,17 +74,14 @@
         display: inline-block;
         padding: 0.5em;
       }
-
-      @media (min-width: 768px) {
-        flex: 1;
-        margin: 0.5em;
-      }
     }
   }
 
   @media (min-width: 500px) {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-inline: 1em;
   }
 }
 
