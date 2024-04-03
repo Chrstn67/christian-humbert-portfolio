@@ -29,7 +29,7 @@ const personalInfo = {
   name: "Christian HUMBERT",
   age: calculateAge("1998-03-11"),
   linkedin: "https://www.linkedin.com/in/christian-humbert-developpeur-web/",
-  discord: "discord.gg/CEn3pBs6mR",
+  discord: "https://discord.com/invite/8965nuC3HM",
   slack:
     "https://join.slack.com/t/mycliumgroupe/shared_invite/zt-26dxwb0qa-gfLxOej6e0~4X6PJOUshkA",
   whatsapp: "https://whatsapp.com/channel/0029VaZwOjRIXnlifbrBE83N",
