@@ -3,6 +3,7 @@ import React from "react";
 import Sondage from "./Sondage/Sondage";
 import Tutoriels from "./Tutoriels/Tutoriels";
 import Defis from "./Defis/Defis";
+import AutresArticles from "./AutresArticles/AutresArticles";
 
 const Veille = () => {
   return (
@@ -11,6 +12,7 @@ const Veille = () => {
 
       <Tutoriels />
       <Defis />
+      <AutresArticles />
     </>
   );
 };

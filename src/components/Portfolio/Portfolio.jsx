@@ -19,7 +19,6 @@ const projects = [
       "Amateurs de paléontologie ou d'animaux disparus, ce site est pour vous ! Venez faire un safari préhistorique, un voyage dans le temps. Partez à la découverte d'animaux dont vous ne soupçonniez peut-être pas l'existence ! Venez collaborer !",
     technologies: ["ViteJS", "SASS"],
     siteLink: "https://chrstn67.github.io/PaleoData/#/",
-    status: "REFONTE EN COURS",
   },
   {
     title: "Questions pour un Champion",
