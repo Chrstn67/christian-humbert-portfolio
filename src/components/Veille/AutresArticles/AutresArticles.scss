@@ -1,81 +1,52 @@
-.Autres-articles {
+.autres-articles-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  color: #3d4451;
+}
+
+.autres-articles-wave {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.autre-article-item {
+  position: relative;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 #773030, 0 6px 20px 0 #773030;
+}
+
+.autre-article-image {
+  width: 15em;
+  height: 15em;
+  object-fit: cover;
+  border-radius: 0.5em;
+}
+
+.autre-article-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem 1rem;
+  background-color: #773030bd;
   color: #fff;
-  padding: 0.5em;
-  margin: 0.5em;
-  border-radius: 0.3em;
+  font-size: 1.2rem;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 
-  transform: translateZ(0);
-  background: #040a22;
-  box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
-    0 0 20px #0000ff80;
-  backdrop-filter: blur(70px);
-
-  h2 {
-    text-align: center;
-  }
-
-  .article-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-    .article-item {
-      position: relative;
-      border-left: 2px solid #3498db;
-      border-bottom: 2px solid #3498db;
-      border-radius: 0.3em;
-
-      transform: translateZ(0);
-      background: #09a7f063;
-      box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
-        0 0 20px #0000ff80;
-      backdrop-filter: blur(70px);
-      padding: 1rem;
-      margin-bottom: 1rem;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      text-decoration: none;
-      &:hover {
-        background-color: #ecf0f1;
-        color: #040a22;
-      }
-    }
-
-    div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      h3 {
-        font-size: 1.5rem;
-        color: #0084ff;
-        margin-bottom: 0.5em;
-      }
-
-      img {
-        width: 10em;
-        height: 10em;
-        object-fit: cover;
-        border-radius: 0.5em;
-        z-index: 1;
-        margin: 1em 0em 1em 0em;
-
-        @media (min-width: 400px) {
-          width: 100%;
-          height: auto;
-        }
-
-        @media (min-width: 500px) {
-          width: 11.5em;
-          height: 11.5em;
-        }
-      }
-
-      p {
-        margin-top: 0.5em;
-        font-size: 1rem;
-        color: #7f8c8d;
-      }
-    }
+@media (max-width: 600px) {
+  .autres-articles-wave {
+    justify-content: center;
   }
 }

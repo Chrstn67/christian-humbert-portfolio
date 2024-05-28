@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Sondage.scss";
-const Sondage = () => {
-  const [fillAnimation, setFillAnimation] = useState(false);
-  const [resultatAnimation, setResultatAnimation] = useState(false);
 
-  const sondagesAvecResultats = [
+const Sondage = () => {
+  const [sondagesAvecResultats] = useState([
     {
       question:
         "Quel support est le plus pratique pour faire des recherches web (réseaux, commerces etc...) ?",
@@ -93,10 +91,10 @@ const Sondage = () => {
         { option: "Autre", resultat: "2" },
       ],
     },
-  ];
+  ]);
 
   return (
-    <div className="Sondage">
+    <section className="Sondage">
       <h2>Résultats de sondages</h2>
       <p>
         Retrouvez tous mes sondages sur mon profil <br />
@@ -110,30 +108,44 @@ const Sondage = () => {
           LinkedIn
         </a>
       </p>
-      {sondagesAvecResultats.map((sondage, index) => (
-        <div key={index} className="Question">
-          <details>
-            <summary>{sondage.question}</summary>
-            <ul>
-              {sondage.propositions
-                .sort((a, b) => parseInt(b.resultat) - parseInt(a.resultat))
-                .map((proposition, propositionIndex) => (
-                  <li key={propositionIndex} className="Option">
-                    <span className="OptionLabel">{proposition.option}</span>
-                    <div className="ProgressBar">
-                      <div
-                        className="Fill"
-                        style={{ width: `${proposition.resultat}%` }}
-                      ></div>
-                    </div>
-                    <span className="Resultat">{`${proposition.resultat}%`}</span>
-                  </li>
-                ))}
-            </ul>
-          </details>
-        </div>
-      ))}
-    </div>
+      {sondagesAvecResultats.map((sondage, index) => {
+        const [isOpen, setIsOpen] = useState(false);
+
+        return (
+          <div key={index} className="Question">
+            <button
+              className="QuestionButton"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {sondage.question}
+            </button>
+            {isOpen && (
+              <div className="Resultats">
+                <ul>
+                  {sondage.propositions
+                    .sort((a, b) => parseInt(b.resultat) - parseInt(a.resultat))
+                    .map((proposition, propositionIndex) => (
+                      <li key={propositionIndex} className="Option">
+                        <span className="OptionLabel">
+                          {proposition.option}
+                        </span>
+                        <div className="ProgressBar">
+                          <div
+                            className="Fill"
+                            style={{ width: `${proposition.resultat}%` }}
+                          >
+                            <span className="Resultat">{`${proposition.resultat}%`}</span>
+                          </div>
+                        </div>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </section>
   );
 };
 

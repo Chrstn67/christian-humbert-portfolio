@@ -18,9 +18,9 @@
   border-bottom: 2px solid #3498db;
   border-radius: 0.3em;
   transform: translateZ(0);
-  background: rgba(9, 167, 240, 0.3882352941);
-  box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
-    0 0 20px rgba(0, 0, 255, 0.5019607843);
+  background: #773030;
+  box-shadow: inset 3px -3px 30px #773030, inset -4px 4px 4px #ffffff,
+    0 0 20px #773030;
   backdrop-filter: blur(70px);
   padding: 1rem;
 
@@ -30,7 +30,7 @@
 .scroll-to-top-button button:hover {
   background-color: #3498db;
 
-  box-shadow: inset 3px -3px 30px #9ef3c1, inset -4px 4px 4px, #006eff,
-    0 0 20px #0000ff80;
+  box-shadow: inset 3px -3px 30px #9ef3c1, inset -4px 4px 4px, #773030,
+    0 0 20px #773030;
   transition: opacity 0.3s ease-in-out;
 }

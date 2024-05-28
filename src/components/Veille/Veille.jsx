@@ -2,7 +2,7 @@ import React from "react";
 
 import Sondage from "./Sondage/Sondage";
 import Tutoriels from "./Tutoriels/Tutoriels";
-import Defis from "./Defis/Defis";
+
 import AutresArticles from "./AutresArticles/AutresArticles";
 
 const Veille = () => {
@@ -11,7 +11,7 @@ const Veille = () => {
       <Sondage />
 
       <Tutoriels />
-      <Defis />
+
       <AutresArticles />
     </>
   );

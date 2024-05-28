@@ -1,23 +1,26 @@
-import React, { useState } from "react";
 import "./Portfolio.scss";
 
 const projects = [
   {
-    title: "WriterTalent",
-    imageUrl: "assets/images/logo_WriterTalent.png",
+    title: "Le Relais Du Dompeter",
+    imageUrl: "assets/images/LogoDompeter.png",
     description:
-      "Sur ce site, nous offrons l'opportunité de lire le travail des écrivains en herbe qui aiment partager le fruit de leur imagination avec une communauté dans le but d'obtenir des commentaires constructifs. Il sera accessible au public prochainement.",
-    technologies: ["React", "SASS", "Symfony"],
-    videoLink:
-      "https://www.linkedin.com/posts/christian-humbert-developpeur-web_et-voil%C3%A0-la-pr%C3%A9sentation-de-notre-projet-activity-7060258632805834752-DYZI?utm_source=share&utm_medium=member_desktop",
+      "Mon premier site pour un vrai client ! Un site vitrine pour vous donner envie de visiter l'Alsace et passer votre séjour au Relais du Dompeter !",
+    technologies: ["ViteJS", "SCSS", "React-Leaflet"],
+    siteLink: "https://www.lerelaisdudompeter.alsace/",
   },
 
   {
     title: "PaleoData",
     imageUrl: "assets/images/PaleoData.png",
     description:
-      "Amateurs de paléontologie ou d'animaux disparus, ce site est pour vous ! Venez faire un safari préhistorique, un voyage dans le temps. Partez à la découverte d'animaux dont vous ne soupçonniez peut-être pas l'existence ! Venez collaborer !",
-    technologies: ["ViteJS", "SASS"],
+      "Le site dont je suis le plus fier ! Amateurs de paléontologie ou d'animaux disparus, ce site est pour vous ! Venez faire un safari préhistorique, un voyage dans le temps. Partez à la découverte d'animaux dont vous ne soupçonniez peut-être pas l'existence ! Venez collaborer !",
+    technologies: [
+      "ViteJS",
+      "SCSS",
+      "React-Leaflet",
+      "React-Vertical-Timeline-Component",
+    ],
     siteLink: "https://chrstn67.github.io/PaleoData/#/",
   },
   {
@@ -25,9 +28,20 @@ const projects = [
     imageUrl: "assets/images/qpuc.png",
     description:
       "Des parties du célèbre jeu 'Questions pour un Champion' ? Amusez-vous avec ces quelques variantes en famille ou entre amis !",
-    technologies: ["ViteJS", "SASS"],
+    technologies: ["ViteJS", "SCSS"],
     siteLink: "https://chrstn67.github.io/questions-pour-un-champion-jeu/",
   },
+
+  {
+    title: "WriterTalent",
+    imageUrl: "assets/images/logo_WriterTalent.png",
+    description:
+      "Sur ce site, nous offrons l'opportunité de lire le travail des écrivains en herbe qui aiment partager le fruit de leur imagination avec une communauté dans le but d'obtenir des commentaires constructifs. Il s'agit actuellement d'un prototype, il n'est pas encore accessible au public.",
+    technologies: ["React", "SCSS", "Symfony"],
+    videoLink:
+      "https://www.linkedin.com/posts/christian-humbert-developpeur-web_et-voil%C3%A0-la-pr%C3%A9sentation-de-notre-projet-activity-7060258632805834752-DYZI?utm_source=share&utm_medium=member_desktop",
+  },
+
   // {
   //   title: "Def'Web",
   //   imageUrl: "assets/images/DefWeb.jpeg",
@@ -46,22 +60,22 @@ const projects = [
     siteLink: "https://chrstn67.github.io/Mail-Search-Job-Manager/",
     status: "REFONTE EN COURS",
   },
-  {
-    title: "Traducteur Français-Alsacien",
-    imageUrl: "assets/images/alsace.jpeg",
-    description:
-      "Il s'agit là d'un de mes tous premiers projets alliant les nouvelles connaissances acquises en début de formation DWWM. Amis Alsaciens, Bienvenus !!",
-    technologies: ["HTML", "CSS", "JS"],
-    siteLink: "https://chrstn67.github.io/Traducteur-Francais-Alsacien/",
-  },
-  {
-    title: "VoiceRanger",
-    imageUrl: "assets/images/voice.jpeg",
-    description:
-      "Voici des cartes d'indentité de chanteuses et chanteurs du monde entier. L'objectif principal est de renseigner la tessiture vocale et l'ambitus de chaque artiste. C'est l'un de mes premiers projets alliant les connaissances acquises durant ma formation DWWM",
-    technologies: ["HTML", "CSS", "JS"],
-    siteLink: "https://chrstn67.github.io/Voice_Ranger/",
-  },
+  // {
+  //   title: "Traducteur Français-Alsacien",
+  //   imageUrl: "assets/images/alsace.jpeg",
+  //   description:
+  //     "Il s'agit là d'un de mes tous premiers projets alliant les nouvelles connaissances acquises en début de formation DWWM. Amis Alsaciens, Bienvenus !!",
+  //   technologies: ["HTML", "CSS", "JS"],
+  //   siteLink: "https://chrstn67.github.io/Traducteur-Francais-Alsacien/",
+  // },
+  // {
+  //   title: "VoiceRanger",
+  //   imageUrl: "assets/images/voice.jpeg",
+  //   description:
+  //     "Voici des cartes d'indentité de chanteuses et chanteurs du monde entier. L'objectif principal est de renseigner la tessiture vocale et l'ambitus de chaque artiste. C'est l'un de mes premiers projets alliant les connaissances acquises durant ma formation DWWM",
+  //   technologies: ["HTML", "CSS", "JS"],
+  //   siteLink: "https://chrstn67.github.io/Voice_Ranger/",
+  // },
 ];
 
 const Portfolio = () => {
@@ -101,6 +115,7 @@ const Portfolio = () => {
                   href={project.siteLink}
                   target="_blank"
                   rel="noopener noreferrer"
+                  title={project.siteLink}
                 >
                   Voir le site
                 </a>

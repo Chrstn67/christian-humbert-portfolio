@@ -1,4 +1,4 @@
-.hobbies-container {
+.language-skills-container {
   margin: 2em;
   text-align: center;
   color: #3d4451;
@@ -11,14 +11,12 @@
     }
   }
 
-  ul {
-    list-style-type: none;
-    padding: 0;
+  .language-cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    li {
+    .language-card {
       margin: 0.5em;
       padding: 1em;
       border-radius: 0.5em;
@@ -32,6 +30,17 @@
 
       @media (max-width: 480px) {
         width: 100%;
+      }
+
+      .language-name {
+        margin-bottom: 0.5em;
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+
+      .level-text {
+        font-size: 1rem;
+        color: #773030;
       }
     }
   }

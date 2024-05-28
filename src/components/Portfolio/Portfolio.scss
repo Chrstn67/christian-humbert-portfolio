@@ -1,16 +1,10 @@
 .portfolio-container {
   display: flex;
   flex-direction: column;
-  color: #fff;
+  color: #3d4451;
   padding: 0.5em;
   margin: 0.5em;
   border-radius: 0.3em;
-
-  transform: translateZ(0);
-  background: #040a22;
-  box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
-    0 0 20px #0000ff80;
-  backdrop-filter: blur(70px);
 
   h2 {
     text-align: center;
@@ -21,17 +15,13 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    border-left: 2px solid #3498db;
-    border-bottom: 2px solid #3498db;
+    border-left: 2px solid #773030;
+    border-bottom: 2px solid #773030;
     border-radius: 0.3em;
-    transform: translateZ(0);
-    background: rgba(9, 167, 240, 0.3882352941);
-    box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
-      0 0 20px #0000ff80;
-    backdrop-filter: blur(70px);
     padding: 1rem;
     margin-bottom: 1rem;
     transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px 0 #5b2525, 0 6px 10px 0 #5b2525;
 
     .status {
       position: absolute;
@@ -47,7 +37,7 @@
     .left-content {
       width: 40%;
       text-align: center;
-      color: #0084ff;
+      color: #773030;
       font-size: 1.3em;
     }
 
@@ -58,36 +48,33 @@
 
       h3 {
         font-size: 1.5rem;
-        color: #0084ff;
+        color: #773030;
         margin-bottom: 0.5rem;
       }
 
       p {
         font-size: 1rem;
-        color: #d4e3e4;
+        color: #3d4451;
         margin-bottom: 1rem;
       }
 
       a {
-        color: #d4e3e4;
-        background: linear-gradient(100deg, #040a22 30%, #1261c9 70%);
-        box-shadow: inset 4px -4px 20px #1c43dd,
-          inset -4px 3.01333px 3.01333px #d6defc;
-        cursor: pointer;
-        padding: 0.5em;
+        margin-top: 0.5em;
+        padding: 0.5em 1em;
         border-radius: 0.5em;
-        text-decoration: none;
+        background-color: #773030;
+        color: #fff;
+        border: none;
+        cursor: pointer;
         &:hover {
-          background: linear-gradient(100deg, #1261c9 30%, #040a22 70%);
-          box-shadow: inset 4px -4px 20px #1c43dd,
-            inset -4px 3.01333px 3.01333px #d6defc;
-          backdrop-filter: blur(70px);
+          background-color: #5b2525;
+          box-shadow: 0 4px 8px 0 #5b2525, 0 6px 20px 0 #5b2525;
         }
       }
 
       h4 {
         text-transform: uppercase;
-        color: #7f8c8d;
+        color: #3d4451;
         margin-top: 1rem;
       }
 
@@ -98,7 +85,7 @@
 
         li {
           font-size: 1rem;
-          color: #00fff2;
+          color: #3d4451;
           margin-bottom: 0.5rem;
         }
       }
@@ -113,8 +100,7 @@
         border-radius: 0.5em;
         z-index: 1;
         margin: 1em 0em 1em 0em;
-        box-shadow: inset 10px -10px 30px #001f47, inset -8px 8px 8px #ffffff,
-          0 0 20px #0000ff80;
+        box-shadow: 0 4px 8px 0 #773030, 0 6px 20px 0 #773030;
 
         @media (min-width: 670px) {
           width: 11em;

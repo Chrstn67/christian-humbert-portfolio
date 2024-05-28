@@ -1,7 +1,7 @@
 // Footer.scss
 
 .footer {
-  background-color: #040a22;
+  background-color: #773030;
   box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
     0 0 20px #0000ff80;
   color: #fff;
@@ -16,20 +16,16 @@
     flex-wrap: wrap;
 
     a {
-      color: #d4e3e4;
-      background: linear-gradient(100deg, #040a22 30%, #1261c9 70%);
-      box-shadow: inset 4px -4px 20px #1c43dd,
-        inset -4px 3.01333px 3.01333px #d6defc;
-      cursor: pointer;
-      padding: 0.5em;
-
+      margin-top: 0.5em;
+      padding: 0.5em 1em;
       border-radius: 0.5em;
-      text-decoration: none;
+      background-color: #773030;
+      color: #fff;
+      border: none;
+      cursor: pointer;
       &:hover {
-        background: linear-gradient(100deg, #1261c9 30%, #040a22 70%);
-        box-shadow: inset 4px -4px 20px #1c43dd,
-          inset -4px 3.01333px 3.01333px #d6defc;
-        backdrop-filter: blur(70px);
+        background-color: #5b2525;
+        box-shadow: 0 4px 8px 0 #5b2525, 0 6px 20px 0 #5b2525;
       }
     }
     img {

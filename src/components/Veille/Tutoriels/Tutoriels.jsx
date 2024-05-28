@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Tutoriels.scss";
 
-const Tutoriels = () => {
+const Tutorials = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const tutorials = [
     {
       title: "Utilisation de Leaflet avec React",
@@ -22,32 +36,29 @@ const Tutoriels = () => {
   ];
 
   return (
-    <section className="Tutoriels">
+    <section className="tutorials-container">
       <h2>Tutoriels</h2>
-
-      <div className="tutorial-list">
+      <div className="tutorials-wave">
         {tutorials.map((tutorial, index) => (
-          <a
+          <div
             key={index}
-            href={tutorial.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="tutorial-item"
+            className={`tutorial-item tutorial-item-${
+              index % 2 === 0 ? "even" : "odd"
+            }`}
           >
-            <div>
-              <h3>{tutorial.title}</h3>
+            <a href={tutorial.link} target="_blank" rel="noopener noreferrer">
               <img
                 src={tutorial.image}
-                alt={`Image de ${tutorial.title}`}
-                className="description"
+                alt={tutorial.title}
+                className="tutorial-image"
               />
-              <p>Voir l'article sur LinkedIn</p>
-            </div>
-          </a>
+              <div className="tutorial-title">{tutorial.title}</div>
+            </a>
+          </div>
         ))}
       </div>
     </section>
   );
 };
 
-export default Tutoriels;
+export default Tutorials;

@@ -1,102 +1,83 @@
 .Sondage {
-  text-align: center;
-  color: #fff;
+  color: #3d4451;
   padding: 0.5em;
   margin: 0.5em;
   border-radius: 0.3em;
+  text-align: center;
 
-  transform: translateZ(0);
-  background: #040a22;
-  box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
-    0 0 20px #0000ff80;
-  backdrop-filter: blur(70px);
-
-  h2 {
-    text-align: center;
-  }
-
-  .link-sondages {
-    color: #d4e3e4;
-    background: linear-gradient(100deg, #040a22 30%, #1261c9 70%);
-    box-shadow: inset 4px -4px 20px #1c43dd,
-      inset -4px 3.01333px 3.01333px #d6defc;
-    cursor: pointer;
-    padding: 0.5em;
-
+  a {
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
     border-radius: 0.5em;
-    text-decoration: none;
+    background-color: #773030;
+    color: #fff;
+    border: none;
+    cursor: pointer;
     &:hover {
-      background: linear-gradient(100deg, #1261c9 30%, #040a22 70%);
-      box-shadow: inset 4px -4px 20px #1c43dd,
-        inset -4px 3.01333px 3.01333px #d6defc;
-      backdrop-filter: blur(70px);
+      background-color: #5b2525;
+      box-shadow: 0 4px 8px 0 #5b2525, 0 6px 20px 0 #5b2525;
     }
   }
 
   .Question {
-    margin-bottom: 1em;
+    border-left: 2px solid #773030;
+    border-bottom: 2px solid #773030;
+    border-radius: 0.3em;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px 0 #5b2525, 0 6px 10px 0 #5b2525;
 
-    details {
+    .QuestionButton {
+      background-color: transparent;
+      margin-bottom: 1em;
+      border: #773030 0.3px solid;
+      padding: 0.3em;
+      border-radius: 0.5em;
       cursor: pointer;
+      color: #773030;
+      font-size: 1.3em;
+      text-align: left;
+    }
 
-      summary {
-        background-color: #09a7f063;
-        box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
-          0 0 20px #0000ff80;
-        border: 2px solid #3498db;
-        padding: 0.5em;
-        border-radius: 0.3em;
-        margin-bottom: 0.5em;
-
-        &:hover {
-          background-color: #ecf0f1;
-          color: #040a22;
-        }
-      }
-
+    .Resultats {
       ul {
         list-style: none;
         padding: 0;
         margin: 0;
-        color: #fff;
-        padding: 0.5em;
-        margin: 0.5em;
-        border-radius: 0.3em;
-
-        transform: translateZ(0);
-        background: #09a7f063;
-        box-shadow: inset 3px -3px 30px #006eff, inset -4px 4px 4px #ffffff,
-          0 0 20px #0000ff80;
-        backdrop-filter: blur(70px);
 
         .Option {
-          display: flex;
-          align-items: center;
-          margin-bottom: 0.5em;
+          font-size: 1rem;
+          color: #3d4451;
+          margin-bottom: 0.5rem;
 
           .OptionLabel {
-            flex: 1;
-            color: #0084ff;
-            text-align: left;
+            display: block;
+            margin-bottom: 0.5rem;
           }
 
           .ProgressBar {
-            flex: 2;
-            height: 20px;
-            background-color: #09a7f063;
-            border: 1px solid #3498db;
+            background-color: #773030;
             border-radius: 0.3em;
-            overflow: hidden;
+            width: 100%;
+            height: 20px;
+            margin-bottom: 0.5rem;
 
             .Fill {
+              position: relative;
+              background-color: #ff9100a2;
+              border-radius: 0.3em;
               height: 100%;
-              background-color: #00fff2;
-            }
-          }
 
-          .Resultat {
-            flex: 1;
-            color: #00fff2;
+              .Resultat {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 0.9em;
+              }
+            }
           }
         }
       }

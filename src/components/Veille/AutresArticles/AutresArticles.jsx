@@ -16,28 +16,24 @@ const AutresArticles = () => {
   ];
 
   return (
-    <section className="Autres-articles">
+    <section className="autres-articles-container">
       <h2>Autres articles</h2>
-
-      <div className="article-list">
-        {autresArticles.map((article, index) => (
-          <a
-            key={index}
-            href={article.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="article-item"
-          >
-            <div>
-              <h3>{article.title}</h3>
+      <div className="autres-articles-wave">
+        {autresArticles.map((autreArticle, index) => (
+          <div key={index} className="autre-article-item">
+            <a
+              href={autreArticle.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
-                src={article.image}
-                alt={`Image de ${article.title}`}
-                className="description"
+                src={autreArticle.image}
+                alt={autreArticle.title}
+                className="autre-article-image"
               />
-              <p>Voir l'article sur LinkedIn</p>
-            </div>
-          </a>
+              <div className="autre-article-title">{autreArticle.title}</div>
+            </a>
+          </div>
         ))}
       </div>
     </section>
