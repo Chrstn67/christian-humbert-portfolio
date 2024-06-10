@@ -1,0 +1,52 @@
+.language-skills-container {
+  border-top: #fff solid 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 2rem;
+  background-color: #292829;
+
+  h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px #00000080;
+  }
+
+  .language-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .language-card {
+      display: flex;
+      background-color: #fff;
+      border: 3px solid black;
+      width: 10em;
+      height: 10em;
+      border-radius: 10px;
+      padding: 1em;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1019607843);
+      transition: all 0.2s ease-in-out;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .language-name {
+        color: rgba(255, 165, 0, 0.8);
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .level-text {
+        color: #292829;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: center;
+      }
+    }
+  }
+}

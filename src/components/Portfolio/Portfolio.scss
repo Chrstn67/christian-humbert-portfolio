@@ -1,13 +1,18 @@
 .portfolio-container {
+  border-top: #fff solid 1px;
   display: flex;
   flex-direction: column;
-  color: #3d4451;
-  padding: 0.5em;
-  margin: 0.5em;
-  border-radius: 0.3em;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 2rem;
+  background-color: #292829;
 
   h2 {
-    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px #00000080;
   }
 
   .project-item {
@@ -15,13 +20,15 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    border-left: 2px solid #773030;
-    border-bottom: 2px solid #773030;
-    border-radius: 0.3em;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 8px 0 #5b2525, 0 6px 10px 0 #5b2525;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    outline: 2px solid #ffa500;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     .status {
       position: absolute;
@@ -37,7 +44,7 @@
     .left-content {
       width: 40%;
       text-align: center;
-      color: #773030;
+      color: #ffa500;
       font-size: 1.3em;
     }
 
@@ -48,7 +55,7 @@
 
       h3 {
         font-size: 1.5rem;
-        color: #773030;
+        color: #ffa500;
         margin-bottom: 0.5rem;
       }
 
@@ -62,13 +69,13 @@
         margin-top: 0.5em;
         padding: 0.5em 1em;
         border-radius: 0.5em;
-        background-color: #773030;
+        background-color: #ffa500;
         color: #fff;
         border: none;
         cursor: pointer;
         &:hover {
-          background-color: #5b2525;
-          box-shadow: 0 4px 8px 0 #5b2525, 0 6px 20px 0 #5b2525;
+          background-color: #000000;
+          color: #fff;
         }
       }
 
@@ -100,7 +107,7 @@
         border-radius: 0.5em;
         z-index: 1;
         margin: 1em 0em 1em 0em;
-        box-shadow: 0 4px 8px 0 #773030, 0 6px 20px 0 #773030;
+        box-shadow: 0 4px 8px 0 #ffa500, 0 6px 20px 0 #ffa500;
 
         @media (min-width: 670px) {
           width: 11em;

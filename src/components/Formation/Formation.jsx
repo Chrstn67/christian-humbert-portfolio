@@ -17,7 +17,7 @@ const Formation = () => {
     {
       institution: "Université de Strasbourg",
       title: "Département du Numérique",
-
+      achievements: "Stage",
       period: "3 au 7 octobre 2022",
       skills: [
         "Réparation du matériel informatique",
@@ -51,52 +51,26 @@ const Formation = () => {
     },
   ];
 
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const [selectedEducation, setSelectedEducation] = useState(null);
-
-  const handleSkillClick = (skills) => {
-    setIsDialogOpen(true);
-    setSelectedEducation(skills);
-  };
-
-  const handleCloseDialog = () => {
-    setIsDialogOpen(false);
-    setSelectedEducation(null);
-  };
-
   return (
-    <section className="experience-container">
+    <section className="formation-container">
       <h2>Formation</h2>
-      <ul>
-        {education.map((edu, index) => (
-          <li key={index}>
-            <h3>
-              {edu.title}, {edu.period}
-            </h3>
-            <p>{edu.institution}</p>
-            <p>{edu.achievements}</p>
-            <button onClick={() => handleSkillClick(edu.skills)}>
-              Voir les compétences
-            </button>
-          </li>
-        ))}
-      </ul>
-      {isDialogOpen && (
-        <dialog open className="dialog" onClick={handleCloseDialog}>
-          <div
-            className="dialog-container"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <h2>Compétences</h2>
+      {education.map((edu, index) => (
+        <div className="formation-item" key={index}>
+          <div className="formation-header">
+            <h2>{edu.title}</h2>
+            <h3>{edu.institution}</h3>
+            <span>{edu.period}</span>
+            <span className="achievements">{edu.achievements}</span>
+          </div>
+          <div className="formation-skills">
             <ul>
-              {selectedEducation.map((skill, index) => (
+              {edu.skills.map((skill, index) => (
                 <li key={index}>{skill}</li>
               ))}
             </ul>
-            <button onClick={handleCloseDialog}>Fermer</button>
           </div>
-        </dialog>
-      )}
+        </div>
+      ))}
     </section>
   );
 };

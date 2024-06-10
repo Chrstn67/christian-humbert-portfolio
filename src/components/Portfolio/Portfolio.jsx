@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import "./Portfolio.scss";
 
 const projects = [
@@ -9,18 +10,13 @@ const projects = [
     technologies: ["ViteJS", "SCSS", "React-Leaflet"],
     siteLink: "https://www.lerelaisdudompeter.alsace/",
   },
-
   {
     title: "PaleoData",
     imageUrl: "assets/images/PaleoData.png",
     description:
-      "Le site dont je suis le plus fier ! Amateurs de paléontologie ou d'animaux disparus, ce site est pour vous ! Venez faire un safari préhistorique, un voyage dans le temps. Partez à la découverte d'animaux dont vous ne soupçonniez peut-être pas l'existence ! Venez collaborer !",
-    technologies: [
-      "ViteJS",
-      "SCSS",
-      "React-Leaflet",
-      "React-Vertical-Timeline-Component",
-    ],
+      "Venez faire un safari préhistorique, un voyage dans le temps. Partez à la découverte d'animaux dont vous ne soupçonniez peut-être pas l'existence ! Venez collaborer !",
+    technologies: ["ViteJS", "SCSS", "React-Leaflet"],
+    status: "V3 EN CONCEPTION",
     siteLink: "https://chrstn67.github.io/PaleoData/#/",
   },
   {
@@ -31,51 +27,24 @@ const projects = [
     technologies: ["ViteJS", "SCSS"],
     siteLink: "https://chrstn67.github.io/questions-pour-un-champion-jeu/",
   },
-
   {
     title: "WriterTalent",
     imageUrl: "assets/images/logo_WriterTalent.png",
     description:
-      "Sur ce site, nous offrons l'opportunité de lire le travail des écrivains en herbe qui aiment partager le fruit de leur imagination avec une communauté dans le but d'obtenir des commentaires constructifs. Il s'agit actuellement d'un prototype, il n'est pas encore accessible au public.",
+      "Nous offrons l'opportunité de lire le travail des écrivains en herbe qui aiment partager le fruit de leur imagination avec une communauté. Le site n'est pas encore accessible au public.",
     technologies: ["React", "SCSS", "Symfony"],
     videoLink:
       "https://www.linkedin.com/posts/christian-humbert-developpeur-web_et-voil%C3%A0-la-pr%C3%A9sentation-de-notre-projet-activity-7060258632805834752-DYZI?utm_source=share&utm_medium=member_desktop",
   },
-
-  // {
-  //   title: "Def'Web",
-  //   imageUrl: "assets/images/DefWeb.jpeg",
-  //   description:
-  //     "Je vous propose ici de faire vos recherches sur le service que rendent les différents langages de programmation, les frameworks existants et des notions de vocabulaire. Tout est rangé dans l'ordre alphabétique, mais vous avez la possibilité de rechercher par mots-clés.",
-  //   technologies: ["HTML", "CSS", "JS"],
-  //   siteLink: "https://chrstn67.github.io/Def-Web/",
-  //   status: "REFONTE EN COURS",
-  // },
   {
     title: "Mail Search Job Manager",
     imageUrl: "assets/images/envoie-lettres.jpeg",
     description:
-      "Cela vous dit de laisser l'indémodable papier-stylo de côté ?  Dans ce projet, je vous propose de vous aider dans votre recherche d'emploi. L'utilisation est extrêmement simple: Il vous suffit simplement de renseigner à qui et quand vous avez envoyé votre lettre de candidature ! Vous pourrez ensuite spécifier si vous avez reçu une réponse ou non. Bonne recherche à vous !",
+      "Cela vous dit de laisser l'indémodable papier-stylo de côté ? Suivez vos lettres de candidature ! Vous pourrez spécifier le statut de votre réponse. Bonne recherche à vous !",
     technologies: ["React", "SCSS", "GeoAPI"],
     siteLink: "https://chrstn67.github.io/Mail-Search-Job-Manager/",
     status: "REFONTE EN COURS",
   },
-  // {
-  //   title: "Traducteur Français-Alsacien",
-  //   imageUrl: "assets/images/alsace.jpeg",
-  //   description:
-  //     "Il s'agit là d'un de mes tous premiers projets alliant les nouvelles connaissances acquises en début de formation DWWM. Amis Alsaciens, Bienvenus !!",
-  //   technologies: ["HTML", "CSS", "JS"],
-  //   siteLink: "https://chrstn67.github.io/Traducteur-Francais-Alsacien/",
-  // },
-  // {
-  //   title: "VoiceRanger",
-  //   imageUrl: "assets/images/voice.jpeg",
-  //   description:
-  //     "Voici des cartes d'indentité de chanteuses et chanteurs du monde entier. L'objectif principal est de renseigner la tessiture vocale et l'ambitus de chaque artiste. C'est l'un de mes premiers projets alliant les connaissances acquises durant ma formation DWWM",
-  //   technologies: ["HTML", "CSS", "JS"],
-  //   siteLink: "https://chrstn67.github.io/Voice_Ranger/",
-  // },
 ];
 
 const Portfolio = () => {

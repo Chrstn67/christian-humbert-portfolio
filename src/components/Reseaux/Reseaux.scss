@@ -1,0 +1,63 @@
+.reseaux {
+  border-top: #fff solid 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 2rem;
+  background-color: #292829;
+
+  .title {
+    width: 100%;
+    text-align: center;
+
+    h2 {
+      color: #fff;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-shadow: 2px 2px 4px #00000080;
+    }
+  }
+
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      background-color: #fff;
+      border-radius: 4px;
+      margin: 10px;
+      box-shadow: 2px 2px 4px #0000001a;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #000000;
+        color: #fff;
+        transform: scale(1.1);
+      }
+
+      svg {
+        font-size: 3rem;
+        transition: fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
+        fill: #ffa500cc;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .icons {
+      a {
+        width: 120px;
+        height: 120px;
+        font-size: 4rem;
+      }
+    }
+  }
+}

@@ -94,57 +94,29 @@ const Sondage = () => {
   ]);
 
   return (
-    <section className="Sondage">
-      <h2>Résultats de sondages</h2>
-      <p>
-        Retrouvez tous mes sondages sur mon profil <br />
-        <br />
-        <a
-          className="link-sondages"
-          href="https://www.linkedin.com/in/christian-humbert-developpeur-web/recent-activity/all/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-      </p>
-      {sondagesAvecResultats.map((sondage, index) => {
-        const [isOpen, setIsOpen] = useState(false);
-
-        return (
-          <div key={index} className="Question">
-            <button
-              className="QuestionButton"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              {sondage.question}
-            </button>
-            {isOpen && (
-              <div className="Resultats">
-                <ul>
-                  {sondage.propositions
-                    .sort((a, b) => parseInt(b.resultat) - parseInt(a.resultat))
-                    .map((proposition, propositionIndex) => (
-                      <li key={propositionIndex} className="Option">
-                        <span className="OptionLabel">
-                          {proposition.option}
-                        </span>
-                        <div className="ProgressBar">
-                          <div
-                            className="Fill"
-                            style={{ width: `${proposition.resultat}%` }}
-                          >
-                            <span className="Resultat">{`${proposition.resultat}%`}</span>
-                          </div>
-                        </div>
-                      </li>
-                    ))}
-                </ul>
+    <section className="sondage-container">
+      <h2>Sondages</h2>
+      <p>Retrouve mes sondages sur mon LinkedIn</p>
+      {sondagesAvecResultats.map((sondage, index) => (
+        <div key={index} className="sondage-card">
+          <h3>{sondage.question}</h3>
+          <div className="propositions-container">
+            {sondage.propositions.map((proposition, idx) => (
+              <div key={idx} className="proposition">
+                <span className="option">{proposition.option}</span>
+                <div className="resultat-bar">
+                  <div
+                    className="resultat"
+                    style={{ width: `${proposition.resultat}%` }}
+                  >
+                    {proposition.resultat}%
+                  </div>
+                </div>
               </div>
-            )}
+            ))}
           </div>
-        );
-      })}
+        </div>
+      ))}
     </section>
   );
 };

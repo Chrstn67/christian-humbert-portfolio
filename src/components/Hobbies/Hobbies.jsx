@@ -4,17 +4,17 @@ const Hobbies = () => {
   const interests = [
     "Musique",
     "Randonnées",
-    "Sciences",
+
     "Paléontologie",
     "Entomologie",
-    "Mathématiques",
+    "Maths",
     "Lecture",
     "Football télévisé",
   ];
 
   return (
     <section className="hobbies-container">
-      <h2>Mes Hobbies</h2>
+      <h2>Hobbies</h2>
       <ul>
         {interests.map((interest, index) => (
           <li key={index}>{interest}</li>

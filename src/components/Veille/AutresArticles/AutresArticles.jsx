@@ -1,4 +1,3 @@
-import React from "react";
 import "./AutresArticles.scss";
 
 const AutresArticles = () => {
@@ -16,26 +15,28 @@ const AutresArticles = () => {
   ];
 
   return (
-    <section className="autres-articles-container">
-      <h2>Autres articles</h2>
-      <div className="autres-articles-wave">
-        {autresArticles.map((autreArticle, index) => (
-          <div key={index} className="autre-article-item">
-            <a
-              href={autreArticle.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={autreArticle.image}
-                alt={autreArticle.title}
-                className="autre-article-image"
-              />
-              <div className="autre-article-title">{autreArticle.title}</div>
-            </a>
+    <section className="article-container">
+      <h2>Tutoriels</h2>
+      {autresArticles.map((article, index) => (
+        <div key={index} className="article-item">
+          <div className="content">
+            <h3>{article.title}</h3>
+            <div className="image-container">
+              <img src={article.image} alt={article.title} />
+            </div>
+            <p>
+              <a
+                href={article.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={article.link}
+              >
+                Lire l'article
+              </a>
+            </p>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </section>
   );
 };
