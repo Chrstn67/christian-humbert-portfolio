@@ -4,9 +4,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 90vh;
+
   padding: 2rem;
-  background-color: #292829;
+  background-color: #ffa500;
 
   h2 {
     color: #fff;
@@ -23,7 +23,7 @@
     margin: 20px 0;
     padding: 20px;
     background-color: #fff;
-    outline: 2px solid #ffa500;
+    outline: 2px solid #000;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -49,37 +49,38 @@
     }
 
     a {
+      text-decoration: none;
       margin-top: 0.5em;
       padding: 0.5em 1em;
       border-radius: 0.5em;
-      background-color: #ffa500;
+      background-color: #000000;
       color: #fff;
       border: none;
       cursor: pointer;
       &:hover {
-        background-color: #000000;
+        background-color: #ffa500;
         color: #fff;
       }
-      @media (max-width: 670px) {
-        font-size: 0.8em;
-      }
     }
+    @media (max-width: 670px) {
+      font-size: 0.8em;
+    }
+  }
 
-    .image-container {
-      text-align: center;
-      img {
-        width: 8em;
-        height: 8em;
-        object-fit: cover;
-        border-radius: 0.5em;
-        z-index: 1;
-        margin: 1em 0em 1em 0em;
-        box-shadow: 0 4px 8px 0 #ffa500, 0 6px 20px 0 #ffa500;
+  .image-container {
+    text-align: center;
+    img {
+      width: 8em;
+      height: 8em;
+      object-fit: cover;
+      border-radius: 0.5em;
+      z-index: 1;
+      margin: 1em 0em 1em 0em;
+      box-shadow: 0 4px 8px 0 #000, 0 6px 20px 0 #ffa500;
 
-        @media (min-width: 670px) {
-          width: 11em;
-          height: 11em;
-        }
+      @media (min-width: 670px) {
+        width: 11em;
+        height: 11em;
       }
     }
   }

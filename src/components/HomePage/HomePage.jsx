@@ -3,7 +3,7 @@ import Langues from "../Langues/Langues";
 import OtherSkills from "../OthersSkills/OthersSkills";
 import Reseaux from "../Reseaux/Reseaux";
 import Hobbies from "../Hobbies/Hobbies";
-import Experience from "../Experience/Experience";
+import ParcoursPro from "../ParcoursPro/ParcoursPro";
 import Formation from "../Formation/Formation";
 import Portfolio from "../Portfolio/Portfolio";
 import Veille from "../Veille/Veille";
@@ -15,7 +15,7 @@ const HomePage = () => (
     <Langues />
     <OtherSkills />
     <Hobbies />
-    <Experience />
+    <ParcoursPro />
     <Formation />
     <Portfolio />
     <Veille />

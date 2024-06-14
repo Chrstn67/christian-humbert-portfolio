@@ -16,7 +16,7 @@ const AutresArticles = () => {
 
   return (
     <section className="article-container">
-      <h2>Tutoriels</h2>
+      <h2>Articles</h2>
       {autresArticles.map((article, index) => (
         <div key={index} className="article-item">
           <div className="content">

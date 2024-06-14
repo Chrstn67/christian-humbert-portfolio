@@ -29,13 +29,13 @@ const Presentation = () => (
     <section className="presentation">
       <header className="Header">
         <img className="banner" src="./assets/banner.png" alt="Bannière" />
-      </header>
-      <div className="profile-container">
         <img
           src="./assets/photo-profil.png"
           className="glassmorphism"
           alt="Profile"
         />
+      </header>
+      <div className="profile-container">
         <div className="age-badge glassmorphism">
           <h1>{personalInfo.name}</h1>
           <p className="age">{personalInfo.age} ans</p>

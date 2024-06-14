@@ -1,7 +1,6 @@
-import { useState } from "react";
-import "./Experience.scss";
+import "./ParcoursPro.scss";
 
-const Experience = () => {
+const ParcoursPro = () => {
   const professionalExperience = [
     {
       title: "Développeur Web",
@@ -44,4 +43,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default ParcoursPro;
