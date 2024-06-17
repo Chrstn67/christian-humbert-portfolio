@@ -23,7 +23,7 @@
     margin: 20px 0;
     padding: 20px;
     background-color: #fff;
-    outline: 2px solid #ffa500;
+    outline: 2px solid #ffa500cc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -34,7 +34,7 @@
 
     .content {
       text-align: center;
-      color: #ffa500;
+      color: #ffa500cc;
       font-size: 1.3em;
     }
 
@@ -44,7 +44,7 @@
 
     h3 {
       font-size: 1.5rem;
-      color: #ffa500;
+      color: #ffa500cc;
       margin-bottom: 0.5rem;
     }
 
@@ -59,7 +59,7 @@
       cursor: pointer;
       cursor: pointer;
       &:hover {
-        background-color: #ffa500;
+        background-color: #ffa500cc;
         color: #fff;
       }
 
@@ -77,7 +77,7 @@
         border-radius: 0.5em;
         z-index: 1;
         margin: 1em 0em 1em 0em;
-        box-shadow: 0 4px 8px 0 #000, 0 6px 20px 0 #ffa500;
+        box-shadow: 0 4px 8px 0 #000, 0 6px 20px 0 #ffa500cc;
 
         @media (min-width: 670px) {
           width: 11em;

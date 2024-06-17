@@ -6,7 +6,7 @@
   justify-content: center;
 
   padding: 2rem;
-  background-color: #ffa500;
+  background-color: #ffa500cc;
 
   h2 {
     color: #fff;
@@ -34,7 +34,7 @@
 
     .content {
       text-align: center;
-      color: #ffa500;
+      color: #ffa500cc;
       font-size: 1.3em;
     }
 
@@ -44,7 +44,7 @@
 
     h3 {
       font-size: 1.5rem;
-      color: #ffa500;
+      color: #ffa500cc;
       margin-bottom: 0.5rem;
     }
 
@@ -58,7 +58,7 @@
       border: none;
       cursor: pointer;
       &:hover {
-        background-color: #ffa500;
+        background-color: #ffa500cc;
         color: #fff;
       }
     }
@@ -76,7 +76,7 @@
       border-radius: 0.5em;
       z-index: 1;
       margin: 1em 0em 1em 0em;
-      box-shadow: 0 4px 8px 0 #000, 0 6px 20px 0 #ffa500;
+      box-shadow: 0 4px 8px 0 #000, 0 6px 20px 0 #ffa500cc;
 
       @media (min-width: 670px) {
         width: 11em;

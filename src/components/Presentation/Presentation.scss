@@ -18,7 +18,7 @@
       height: auto;
       max-width: 100%;
       max-height: 100vh;
-      outline: 4px solid #ffa500;
+      outline: 4px solid #ffa500cc;
       border-radius: 2em;
 
       @media (min-width: 768px) {
@@ -30,7 +30,7 @@
       height: 10em;
       border-radius: 2em;
       object-fit: cover;
-      outline: 4px solid #ffa500;
+      outline: 4px solid #ffa500cc;
       box-shadow: 0 0 10px #ffffff80;
       margin: 1em 2rem 1em 0;
 
@@ -60,7 +60,7 @@
         font-family: "Comic Neue", cursive;
         color: #000;
         font-weight: 700;
-        text-shadow: 2px 2px 0 #ffa50080;
+        text-shadow: 2px 2px 0 #ffa500cc;
         margin-bottom: 0.5rem;
       }
 

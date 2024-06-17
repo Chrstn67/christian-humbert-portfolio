@@ -25,14 +25,14 @@
     margin: 20px 0;
     padding: 20px;
     background-color: #fff;
-    outline: 2px solid #ffa500;
+    outline: 2px solid #ffa500cc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     h3 {
       font-size: 1.5rem;
-      color: #ffa500;
+      color: #ffa500cc;
       margin-bottom: 0.5rem;
     }
 
@@ -56,7 +56,7 @@
 
           .resultat {
             text-align: center;
-            background-color: #ffa500;
+            background-color: #ffa500cc;
             border-radius: 10px;
           }
         }
